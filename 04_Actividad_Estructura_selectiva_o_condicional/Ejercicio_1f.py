@@ -1,4 +1,8 @@
 #f.
+"""
+Determinar si un número entero ingresado por el usuario es: par, múltiplo
+de 7 o su última cifra es 3.
+"""
 
 num = int(input("Ingrese un numero de máximo 2 cifras: "))
 

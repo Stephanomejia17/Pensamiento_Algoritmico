@@ -1,5 +1,10 @@
 #g.
 
+"""
+Diseñe un algoritmo que lea tres números enteros, determine el promedio
+de los números e indique cuál es el número más cercano al promedio.
+"""
+
 num_1 = int(input("Ingrese el primer numero: ")) 
 num_2 = int(input("Ingrese el segundo numero: "))
 num_3 = int(input("Ingrese el tercer numero: "))

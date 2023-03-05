@@ -1,5 +1,14 @@
 #h.
 
+"""
+Mostrar el valor de X, de acuerdo con la siguiente relación:
+X = 0, si Y < A and (A < B < C)
+X = 1, si A <= Y < B
+X = 2, si B <= Y < C
+X = 3, si C <= Y
+X = 4, si No cumple ninguna de las condiciones anteriores
+"""
+
 A = int(input("Ingrese el primer valor: "))
 B = int(input("Ingrese el segundo valor: "))
 C = int(input("Ingrese el tercer valor: "))    
