@@ -1,0 +1,150 @@
+import math 
+#1a. Mostrar todos los números impares desde 1 hasta el 300.
+"""
+suma = 0
+for i in range(1,300):
+    if(i % 2 != 0):
+        suma = suma + i
+print("La suma es: ", i)
+"""
+#1b. Realizar una cuenta regresiva desde 10 hasta 0
+"""
+for i in range(10,0,-1):
+    print("Cuenta Regresiva: ", i)
+print("Cuenta Regresiva: 0")
+"""
+
+#1c. Imprimir el promedio de una lista de 100 números.
+"""
+prom = 0
+sum1 = 0
+cont = 0
+for i in range(1,100):
+    cont = cont + 1
+    sum1 = sum1 + i
+prom = sum1/cont
+
+print("El promedio es: ", prom)
+"""
+#1d. Determine la suma de los números enteros mayores que cero y menores que 10
+"""
+suma = 0
+for i in range(1,10):
+    suma = suma + i
+print("La Suma es: ", suma)
+"""
+#1e. Calcule la suma de los números pares que están entre el 10 y 2, empezando por el 10 y sumando sucesivamente 8,6,…, 2.
+"""
+suma = 0
+for i in range(10, 0, -2):
+    suma = suma + i
+    
+print("La suma es: ", suma)
+"""
+
+#1f. Diseñe un algoritmo para determinar la suma de los números cuya última cifra es siete y están comprendidos entre dos números M y N ingresados por el usuario.
+"""
+M = int(input("Ingrese un valor: "))
+N = int(input("Ingrese otro valor: "))
+May = 0
+men = 0
+suma = 0
+if(M>N):
+    May = M
+    men = N
+else:
+    May = N
+    men = M
+for i in range(men,May):
+    if(i%10==7):
+        suma = suma + i
+                
+print("La suma es: ", i)
+"""
+
+#1g. Calcule el factorial de un número ingresado por el usuario.
+"""
+a = int(input("Ingrese un valor: "))
+fact = 1
+for i in range(1, a+1):
+    fact = fact * i
+
+print("El factorial es: ", fact)
+"""
+
+#1h. De los primeros 100 números enteros positivos, calcule el promedio de sus números pares y el promedio de sus números impares.
+"""
+prom1 = 0
+sum1 = 0
+cont1 = 0
+prom2 = 0
+sum2 = 0
+cont2 = 0 
+for i in range(1,101):
+    if(i % 2 == 0):
+        sum1 = sum1 + i
+        cont1 = cont1 + 1
+    else:
+        sum2 = sum2 + i
+        cont2 = cont2 + 1
+prom1 = sum1 / cont1
+prom2 = sum2 / cont2
+
+print("El promedio de los numeros pares es: ", prom1)
+print("El promedio de los numeros impares es: ", prom2)
+"""
+#1i. Determinar si un numero es primo o no
+"""
+cont = 0
+a = int(input("Ingrese un valor: "))
+
+for i in range(1,a+1):
+    if(a % i == 0):
+        cont = cont + 1
+
+if(cont > 2):
+    print("El numero", a, "no es primo")
+else:
+    print("El numero", a , "es primo")
+"""
+
+#1j. Determinar el mayor número de una lista arbitraria de números reales.
+"""
+a = int(input("Ingrese la cantidad de numeros de la lista: "))
+mayor = -9999999999
+for i in range(1,a+1):
+    num = float(input("Ingrese un numero: "))
+    if(num >= mayor):
+        mayor = num
+    
+print("El valor mayor es: ", mayor)
+"""
+
+#1k. Calcule la suma de los divisores de n distintos de n
+"""
+suma = 0
+n = int(input("Ingrese un valor: "))
+for i in range(1,n):
+    if(n%i == 0):
+        suma = suma + i
+print("La suma de los divisores es: ", suma)
+"""
+
+#1l.  Dado el radio de varios círculos, determinar el área y la circunferencia de cada uno de ellos y encontrar el círculo de mayor área.
+"""
+mayor = 0
+cir = 0
+a = int(input("Ingrese la cantidad de circulos: "))
+
+for i in range(1,a+1):
+    r = float(input("Ingrese el radio: "))
+    a = math.pi * (r)**2
+    d = r * 2
+    
+    if(a >= mayor):
+        mayor = a
+        cir = i
+print("El circulo mayor es el: ", cir)
+"""    
+    
+    

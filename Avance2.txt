@@ -1,0 +1,188 @@
+"""
+1a. Mostrar todos los números impares desde 1 hasta el 300.
+
+i = 1
+
+while i <= 300:
+    print(i)
+    i += 2
+"""
+
+"""
+1b. Realizar una cuenta regresiva desde 10 hasta 0.
+
+i = 10
+while i >= 0:
+    print(i)
+    i -= 1
+"""
+
+"""
+1c. Imprimir el promedio de una lista de 100 números.
+"""
+#Version 1
+"""
+i = 1
+conta = 0
+suma = 0
+
+while i <= 100:
+    suma = suma + i
+    conta += 1
+    i += 1
+prom = suma / conta
+print("El promedio es: ", prom)
+"""
+
+#Version 2
+"""
+i = 1
+conta = 0
+suma = 0
+
+while i <= 100:
+    num = int(input("Ingrese un valor: "))
+    suma = suma + num
+    conta += 1
+    i += 1
+prom = suma / conta
+print("El promedio es: ", prom)
+"""
+
+#Version 3
+"""
+conta = 0
+suma = 0
+
+a = int(input("Ingrese un valor: "))
+b = int(input("Ingrese un valor: "))
+
+if (a > b):
+    M = a
+    m = b
+else:
+    M = b
+    m = a
+    
+i = m
+while i <= M:
+    suma = suma + i
+    conta += 1
+    i += 1
+prom = suma / conta
+print("El promedio es: ", prom)
+"""
+
+"""
+1d. Determine la suma de los números enteros mayores que cero y menores
+que 10.
+
+suma = 0
+i = 1
+
+while i < 10:
+    suma = suma + i
+    i += 1
+print("La suma es: ", suma)
+
+"""
+
+"""
+1e. Calcular la suma de los valores de una lista de números enteros, la
+cantidad de valores negativos, positivos, iguales a cero y el total de los
+números en la lista.
+
+
+Cant_Valores = int(input("Ingrese la cantidad de valores de la lista: "))
+suma = 0
+neg = 0
+pos = 0
+cero = 0
+cont = 0
+i = 1
+
+
+while i < Cant_Valores+1:
+    val = int(input("Ingrese uno de los valores de la lista: "))
+    if (val < 0):
+        neg += 1
+    elif (val > 0):
+        pos += 1
+    else:
+        cero += 1
+    cont += 1
+    suma = suma + val 
+    i += 1
+
+
+a = "-"
+print(a*50)
+print("La suma de la lista es: ", suma)
+print("La cantidad de numeros positivos son: ", pos)
+print("La cantidad de numeros negativos son: ", neg)
+print("La cantidad de ceros son: ", cero)
+"""
+
+"""
+1f. Determinar cuántas cifras posee un número ingresado por el usuario.
+
+
+a = int(input("Ingrese un valor: ")) #345
+if(a < 0):
+    a = a*-1
+
+val = 0
+cont = 0
+i = 1
+
+while i:
+    if (a/10 > 1):
+        a = a/10
+        cont += 1
+    else:
+        i = 0          
+cont += 1
+    
+print("Numero de cifras: ", cont)
+"""
+
+"""
+1g. Determinar el mayor número de una lista arbitraria de números reales.
+
+cant_val = int(input("Ingrese la cantidad de valores: "))
+may = 0
+i = 1
+
+while i < cant_val+1:
+    val = float(input("Ingrese un Valor: "))
+    if(val >= may):
+        may = val
+        
+    i += 1
+print("El numero mayor es: ", may)
+"""
+
+"""
+1h. Diseñe un algoritmo para determinar la suma de los números cuya última
+cifra es cinco y están comprendidos entre dos números M y N ingresados por
+el usuario.
+"""
+
+M = int(input("Ingrese el primer valor: "))
+N = int(input("Ingrese el segundo valor: "))
+suma = 0
+
+if M > N:
+    may = M
+    men = N
+else:
+    may = N
+    men = M
+
+i = men
+while i < may:
+    if(i % 10 == 5):
+        suma = suma + i
+        print("Valor a sumar: ", i)
+    i += 1
+print("La suma es: ", suma)
