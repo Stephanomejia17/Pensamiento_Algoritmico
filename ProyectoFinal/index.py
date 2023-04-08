@@ -1,6 +1,7 @@
 Productos = ["Manzana", "Pera", "Guanabana", "Sandía", "Granadilla"]
 codProductos = ["001", "002", "003", "004", "005"]
 PreciosProductos = [2530, 1700, 25650, 16850, 1920]
+existencias = [50,45,20,17,54]
 
 exit = 1
 x = "-"
@@ -48,7 +49,28 @@ while exit:
                 print("Precio: ", PreciosProductos[i])
                 break
     
-    
+    elif(opcion == 3):
+        print("Si desea conocer las existencias de todos los productos ingrese 0:")
+        productoSelec = str(input("Ingrese el código del Producto: "))
+        
+        if(productoSelec == "0"):
+            for i in range(0,len(Productos)):
+                print("Producto: ", Productos[i], "\t Código: ", codProductos[i], "\t Existencias: ", existencias[i])
+        else: 
+            aux = -1
+            for i in range(0,len(codProductos)):
+                if(codProductos[i] == productoSelec):
+                    aux = i
+                
+            if(aux == -1):
+                print("El código seleccionado no Existe.")
+            else:
+                print("Producto: ", Productos[aux], "\t Código: ", codProductos[aux], "\t Existencias: ", existencias[aux])    
+            
+            
+            
+        
+        
     else: 
         exit = 0
             
