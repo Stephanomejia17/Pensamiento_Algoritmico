@@ -3,7 +3,7 @@ codProductos = ["001", "002", "003", "004", "005"]
 PreciosProductos = [2530, 1700, 25650, 16850, 1920]
 existencias = [50,45,20,17,54]
 
-exit = 1
+exit = 1 #Verdadero
 x = "-"
 
 while exit:
