@@ -1,9 +1,9 @@
-Productos = ["Manzana", "Pera", "Guanabana", "Sandía", "Granadilla"]
+Marcas = ["Manzana", "Pera", "Guanabana", "Sandía", "Granadilla"]
 codProductos = ["001", "002", "003", "004", "005"]
 PreciosProductos = [2530, 1700, 25650, 16850, 1920]
 existencias = [50,45,20,17,54]
 
-exit = 1 #Verdadero
+exit = 1 
 x = "-"
 
 while exit:
@@ -12,7 +12,7 @@ while exit:
     print(x*75, "\n", "Seleccione una de las opciones: ")
     print("1) Realizar una Compra",  "\n2) Consultar Precio", "\n3) Inventario", "\n4) Salir")
     opcion = int(input("Ingrese la opción que quiere realizar: "))
-    tamProductos = len(Productos)
+    tamProductos = len(Marcas)
     cesta = []
     preciosCesta = []
     total = 0
@@ -27,7 +27,7 @@ while exit:
             else:
                 for j in range(0,tamProductos):
                     if(codigo == codProductos[j]):
-                        cesta.append(Productos[j])
+                        cesta.append(Marcas[j])
                         preciosCesta.append(PreciosProductos[j])
                         total = total + PreciosProductos[j]
                         break
