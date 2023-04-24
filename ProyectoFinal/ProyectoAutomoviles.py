@@ -32,3 +32,30 @@ while exit:
     
     elif(opcion == 5):
         exit = 0
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
