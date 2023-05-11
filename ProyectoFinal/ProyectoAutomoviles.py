@@ -7,7 +7,6 @@ existencias = [[2,3,2], [5,1,2],[2,3,1],[1,2,0],[2,1,1],[1,1,1],[1,2,1]]
 exit = 1
 x = "-"
 
-
 def Comprar():
     codAuto = str(input("Ingrese el código del Auto: "))
     for i in range(0, len(codAutos)):
@@ -15,7 +14,7 @@ def Comprar():
             if(codAutos[i][j] == codAuto and existencias[i][j] > 0):
                 print("{:<10} {:<15} {:<15} {:<15} {:<10}".format('Codigo', 'Marca', 'Modelo', 'Precio(USD)', 'Existencias'))
                 print("{:<10} {:<15} {:<15} {:<15} {:<10}".format(codAuto, Marcas[i], Modelo[i][j], PreciosAutos[i][j], existencias[i][j]))
-                confirmador = int(input("Ingrese 1 si desea continuar con la compra, de lo contrario ingrese 0"))
+                confirmador = int(input("Ingrese 1 si desea continuar con la compra, de lo contrario ingrese 0: "))
                 if(confirmador == 1):
                     
                     TotalCompra = PreciosAutos[i][j]
@@ -43,25 +42,21 @@ def Comprar():
    
                 else:
                     break
-                
-    
-
+            elif(codAutos[i][j] == codAuto and existencias[i][j] == 0):
+                print("NO HAY EXISTENCIAS DEL AUTO INGRESADO, TE CONTACTAREMOS PRONTO")
+                break 
 while exit:
     print(x*75)
     print("B\tI\tE\tN\tV\tE\tN\tI\tD\tO")
     print(x*75, "\n", "Seleccione una de las opciones: ")
-    print("1) Realizar una Compra",  "\n2) Consultar Precio", "\n3) Inventario", "\n4) Catálogo", "\n5) Salir")
+    print("1) Realizar una Compra",  "\n2) Consultar Precio","\n3) Catálogo", "\n4) Salir")
     opcion = int(input("Ingrese la opción que quiere realizar: "))
     
     if(opcion == 1):
         
         print(x*75)
         Comprar()
-        
-            
-        
-                        
-            
+  
     elif(opcion == 2):
         print(x*75)
         codAuto = str(input("Ingrese el código del Auto: "))
@@ -77,7 +72,7 @@ while exit:
         if(verificador == 0):
             print("EL CÓDIGO DEL AUTO INGRESADDO NO EXISTE")
                   
-    elif(opcion == 4):
+    elif(opcion == 3):
         print(x*75)
         print("{:<10} {:<15} {:<15} {:<15} {:<10}".format('Codigo', 'Marca', 'Modelo', 'Precio(USD)', 'Existencias'))
         print(x*75)
@@ -88,7 +83,7 @@ while exit:
                 
                 print("{:<10} {:<15} {:<15} {:<15} {:<10}".format(codAutos[i][j], Marcas[i], Modelo[i][j], PreciosAutos[i][j], existencias[i][j]))
                 
-    elif(opcion == 5):
+    elif(opcion == 4):
         exit = 0
         
         
